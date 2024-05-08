@@ -1,5 +1,26 @@
 * {
     padding: 0;
     margin: 0;
+    width:100%;
     box-sizing: border-box;
   }
+
+.header {
+    padding: 2rem;
+    text-align: center;
+    width:100%;
+}
+
+.header img {
+    height: auto; 
+    width: auto; 
+    max-width: 540px; 
+}
+
+
+.header-desc {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.3rem;
+    opacity: 0.6;
+}
+
