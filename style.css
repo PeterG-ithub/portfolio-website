@@ -24,3 +24,20 @@
     opacity: 0.6;
 }
 
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+    gap: 10px;
+    max-width: 1350px;
+    margin: auto;
+    padding: 1rem;
+}
+
+.box-container {
+    border: solid black;
+    border-radius: .7rem;
+    max-width: 435px;
+    min-width: 200px;
+    min-height: 200px;
+    text-align: center;
+}
