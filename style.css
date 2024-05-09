@@ -26,18 +26,23 @@
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
-    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Ensure each column has a minimum width of 200px */
+    gap: 15px;
     max-width: 1350px;
     margin: auto;
     padding: 1rem;
-}
-
+  }
+  
 .box-container {
     border: solid black;
     border-radius: .7rem;
-    max-width: 435px;
-    min-width: 200px;
+    min-width: 350px; /* Keep a minimum width */
     min-height: 200px;
     text-align: center;
+    box-sizing: border-box; /* Include border in the box's dimensions */
+    transition: all 0.2s ease;
+}
+
+.box-container:hover {
+    transform: scale(1.02);
 }
