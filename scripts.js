@@ -49,4 +49,12 @@ document.addEventListener('DOMContentLoaded', function() {
             technologyDropdown.classList.remove('show');
         }
     });
+
+    const moreDropdown = document.querySelector('.more-dropdown .dropdown-toggle');
+    const dropdownContent = document.querySelector('.more-dropdown .dropdown-content');
+    const boxContainer = document.querySelector('.box-container');
+    moreDropdown.addEventListener('click', function() {
+        dropdownContent.classList.toggle('show');
+        boxContainer.classList.toggle('expanded');
+    });
 });

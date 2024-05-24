@@ -42,7 +42,6 @@
     text-align: center;
     box-sizing: border-box; /* Include border in the box's dimensions */
     transition: all 0.2s ease;
-    
 }
 
 .box-container:hover {
@@ -64,6 +63,7 @@
     background-image: url('images/bouncy-ball-project.png');
     background-size: cover;
     background-position: center;
+    opacity: .05;
 }
 
 .status-container {
@@ -168,4 +168,47 @@
 
 .dropdown-item > * {
     width: auto;
+}
+
+.technology-container {
+    position: absolute;
+    bottom: 10%;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.more-dropdown {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.dropdown-toggle {
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 5px;
+    width: calc(100% - 40px); /* Adjust to fit inside the box-container */
+    top: 100%; /* Position below the toggle button */
+  }
+
+.more-dropdown .show {
+    display: block;
+}
+
+.box-container.expanded {
+    min-height: 500px; /* Adjust based on content */
 }
