@@ -95,3 +95,17 @@
     vertical-align: middle; /* Align image vertically */
 }
 
+.filter-container {
+    max-width: 1300px;
+    margin: auto;
+    padding: 0rem 1rem;
+}
+
+.filter-container img {
+    max-width: 24px;
+    transition: all 0.2s ease;
+}
+
+.filter-container img:hover {
+    transform: scale(1.2);
+}
