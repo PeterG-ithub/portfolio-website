@@ -34,15 +34,64 @@
   }
   
 .box-container {
+    position: relative;
     border: solid black;
     border-radius: .7rem;
     min-width: 350px; /* Keep a minimum width */
-    min-height: 200px;
+    min-height: 400px;
     text-align: center;
     box-sizing: border-box; /* Include border in the box's dimensions */
     transition: all 0.2s ease;
+    
 }
 
 .box-container:hover {
     transform: scale(1.02);
 }
+
+.godot-feature-project {
+    background-image: url('images/godot-feature-project.png');
+    background-size: cover;
+}
+
+.box-container-content {
+    position: relative;
+    z-index: 1;
+    color: black; /* Example: text color on top of the semi-transparent background */
+}
+
+.bouncy-ball-project {
+    background-image: url('images/bouncy-ball-project.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.status-container {
+    width: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 3px 5px;
+    margin: 3px;
+    display: flex;
+    align-items: center; /* Align items vertically */
+    justify-content: flex-end; /* Align items to the end (right side) */
+    background-color: azure;
+    border-radius: .7rem;
+    border: solid black 2px;
+    opacity: .8;
+}
+
+.status-text {
+    margin-right: 5px; /* Adjust margin between text and image */
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    width: auto;
+}
+
+.status-container img {
+    max-width: 16px; /* Ensure image does not exceed container width */
+    height: auto; /* Maintain aspect ratio */
+    vertical-align: middle; /* Align image vertically */
+}
+
