@@ -1,73 +1,84 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Peter's Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script src="scripts.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <div class="header">
-        <img src="images/portfolio-logo.png" alt="portfolio logo" >
-        <div class="header-desc">
-            a small portfolio website by Peter
-        </div>
+      <img src="images/portfolio-logo.png" alt="portfolio logo" />
+      <div class="header-desc">a small portfolio website by Peter</div>
     </div>
     <div class="filter-container">
-        <div class="status-dropdown dropdown">
-            <button class="dropdown-toggle" id="filter-status">Status</button>
-            <div class="dropdown-menu">
-              <div class="dropdown-item">
-                <input type="checkbox" id="completed" data-state="neutral">
-                <label for="completed">Completed</label>
-              </div>
-              <div class="dropdown-item">
-                <input type="checkbox" id="ongoing" data-state="neutral">
-                <label for="ongoing">Ongoing</label>
-              </div>
-              <div class="dropdown-item">
-                <input type="checkbox" id="abandoned" data-state="neutral">
-                <label for="abandoned">Abandoned</label>
-              </div>
-              <div class="dropdown-item">
-                <input type="checkbox" id="does-not-exist" data-state="neutral">
-                <label for="does-not-exist">Does Not Exist</label>
-              </div>
-            </div>
+      <div class="status-dropdown dropdown">
+        <button class="dropdown-toggle" id="filter-status">Status</button>
+        <div class="dropdown-menu">
+          <div class="dropdown-item">
+            <input type="checkbox" id="completed" data-state="neutral" />
+            <label for="completed">Completed</label>
           </div>
-          <div class="technology-dropdown dropdown">
-            <button class="dropdown-toggle" id="filter-technology">Technology</button>
-            <div class="dropdown-menu ">
-              <div class="technology-dropdown-item dropdown-item" data-value="godot">Godot</div>
-              <div class="technology-dropdown-item dropdown-item" data-value="c++">C++</div>
-              <div class="technology-dropdown-item dropdown-item" data-value="python">Python</div>
-              <div class="technology-dropdown-item dropdown-item" data-value="javascript">JavaScript</div>
-              <!-- Add more technology options as needed -->
-            </div>
+          <div class="dropdown-item">
+            <input type="checkbox" id="ongoing" data-state="neutral" />
+            <label for="ongoing">Ongoing</label>
           </div>
-        <img src="images/filter.png" alt="filter icon" title="Filter">
+          <div class="dropdown-item">
+            <input type="checkbox" id="abandoned" data-state="neutral" />
+            <label for="abandoned">Abandoned</label>
+          </div>
+          <div class="dropdown-item">
+            <input type="checkbox" id="does-not-exist" data-state="neutral" />
+            <label for="does-not-exist">Does Not Exist</label>
+          </div>
+        </div>
+      </div>
+      <div class="technology-dropdown dropdown">
+        <button class="dropdown-toggle" id="filter-technology">
+          Technology
+        </button>
+        <div class="dropdown-menu">
+          <div
+            class="technology-dropdown-item dropdown-item"
+            data-value="godot"
+          >
+            Godot
+          </div>
+          <div class="technology-dropdown-item dropdown-item" data-value="c++">
+            C++
+          </div>
+          <div
+            class="technology-dropdown-item dropdown-item"
+            data-value="python"
+          >
+            Python
+          </div>
+          <div
+            class="technology-dropdown-item dropdown-item"
+            data-value="javascript"
+          >
+            JavaScript
+          </div>
+          <!-- Add more technology options as needed -->
+        </div>
+      </div>
+      <img src="images/filter.png" alt="filter icon" title="Filter" />
     </div>
     <div class="grid-container">
-        <div class="box-container godot-feature-project">
-            <div class="status-container">
-                <div class="status-text">
-                    Completed  
-                </div>
-                <img src="images/green-dot.png" alt="green dot icon">
-            </div>
-            <div class="technology-container">
-                Godot, C++, Etc...
-            </div>
-            <div class="more-dropdown">
-                <button class="dropdown-toggle">▼</button>
-                <div class="dropdown-content">
-                    I am the additional content
-                </div>
-            </div>
+      <div class="box-container godot-feature-project">
+        <div class="status-container">
+          <div class="status-text">Completed</div>
+          <img src="images/green-dot.png" alt="green dot icon" />
         </div>
-        <div class="box-container bouncy-ball-project">test</div>
-        <div class="box-container">test</div>
-    </div>   
-</body>
+        <div class="technology-container">Godot, C++, Etc...</div>
+        <div class="more-dropdown">
+          <button class="dropdown-toggle">▼</button>
+          <div class="dropdown-content">I am the additional content</div>
+        </div>
+      </div>
+      <div class="box-container bouncy-ball-project">test</div>
+      <div class="box-container">test</div>
+    </div>
+  </body>
 </html>
