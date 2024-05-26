@@ -18,7 +18,7 @@
 }
 
 .header-desc {
-  font-family: "Times New Roman", Times, serif;
+  font-family: 'Times New Roman', Times, serif;
   font-size: 1.3rem;
   opacity: 0.6;
 }
@@ -51,7 +51,7 @@
 }
 
 .godot-feature-project {
-  background-image: url("images/godot-feature-project.png");
+  background-image: url('images/godot-feature-project.png');
   background-size: cover;
 }
 
@@ -62,7 +62,7 @@
 }
 
 .bouncy-ball-project {
-  background-image: url("images/bouncy-ball-project.png");
+  background-image: url('images/bouncy-ball-project.png');
   background-size: cover;
   background-position: center;
   opacity: 0.05;
@@ -103,15 +103,7 @@
   padding: 0rem 1rem;
   display: flex;
   gap: 10px;
-}
-
-.filter-container img {
-  max-width: 24px;
-  transition: all 0.2s ease;
-}
-
-.filter-container img:hover {
-  transform: scale(1.2);
+  flex-wrap: wrap;
 }
 
 .dropdown {
@@ -120,14 +112,7 @@
   border: solid black 2px;
   border-radius: 0.7rem;
   background-color: #f0f0f0;
-}
-
-.status-dropdown {
-  max-width: 172px;
-}
-
-.technology-dropdown {
-  max-width: 200px;
+  width: auto;
 }
 
 .dropdown-toggle {
@@ -158,9 +143,12 @@
   align-items: center;
   padding: 8px 12px;
 }
-
-.dropdown-menu .dropdown-item input[type="checkbox"] {
+.dropdown-menu .dropdown-item input[type='checkbox'] {
   margin-right: 8px;
+}
+
+.dropdown-item {
+  white-space: nowrap;
 }
 
 .dropdown.show .dropdown-menu {
@@ -169,6 +157,10 @@
 
 .dropdown-item > * {
   width: auto;
+}
+
+.dropdown-menu {
+  width: fit-content;
 }
 
 .technology-container {

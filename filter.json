@@ -1,0 +1,30 @@
+{
+  "Sort By": {
+    "type": ["Select"],
+    "data": ["Top", "Date", "Most Viewed", "Highest Rated"]
+  },
+  "Game Engine": {
+    "type": ["Select"],
+    "data": ["Godot", "Unreal Engine", "Unity"]
+  },
+  "Programming Languages": {
+    "type": ["Checkbox"],
+    "data": ["C++", "Python", "JavaScript", "C#"]
+  },
+  "Frameworks and Libraries": {
+    "type": ["Checkbox"],
+    "data": ["SFML", "SDL", "Phaser"]
+  },
+  "Platforms": {
+    "type": ["Select"],
+    "data": ["GitHub", "GitLab", "Bitbucket"]
+  },
+  "Project Type": {
+    "type": ["Checkbox"],
+    "data": ["Game", "Tool", "Library", "Plugin", "Demo"]
+  },
+  "Dev Stage": {
+    "type": ["Checkbox"],
+    "data": ["Concept", "In Development", "Prototype", "Completed", "Maintenance"]
+  }
+}
