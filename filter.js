@@ -94,7 +94,8 @@ document.addEventListener('DOMContentLoaded', function () {
         dropdownItem.addEventListener('click', function () {
           const selectedValue = this.getAttribute('data-value');
           const selectedText = this.textContent;
-          const parentButton = this.closest('.dropdown-container').querySelector('.dropdown-toggle');
+          const parentButton =
+            this.closest('.dropdown-container').querySelector('.dropdown-toggle');
 
           // Update button text and invert color scheme
           parentButton.textContent = `${selectedText} X`;
@@ -137,25 +138,27 @@ document.addEventListener('DOMContentLoaded', function () {
   function addDropdownEventListeners() {
     // Select all dropdown toggles and dropdowns
     const dropdowns = document.querySelectorAll('.dropdown');
-  
+
     // Add event listener to each dropdown toggle within its container
     dropdowns.forEach((dropdown) => {
       const dropdownToggle = dropdown.querySelector('.dropdown-toggle');
-  
+
       dropdownToggle.addEventListener('click', function (event) {
         // If the button contains the reset button, reset the dropdown
         if (dropdownToggle.querySelector('.reset-button')) {
           event.stopPropagation();
-          dropdownToggle.textContent = dropdownToggle.id.replace('filter-', '').charAt(0).toUpperCase() + dropdownToggle.id.replace('filter-', '').slice(1);
+          dropdownToggle.textContent =
+            dropdownToggle.id.replace('filter-', '').charAt(0).toUpperCase() +
+            dropdownToggle.id.replace('filter-', '').slice(1);
           dropdownToggle.classList.remove('inverted');
           dropdownToggle.querySelector('.reset-button').remove();
         } else {
           // Check if the dropdown is already open
           const isOpen = dropdown.classList.contains('show');
-  
+
           // Close all dropdowns
           closeAllDropdowns();
-  
+
           // If the clicked dropdown was not already open, open it
           if (!isOpen) {
             dropdown.classList.add('show');

@@ -6,6 +6,7 @@
     <title>Peter's Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <script src="filter.js"></script>
+    <script src="project.js"></script>
   </head>
   <body>
     <div class="header">
@@ -13,22 +14,12 @@
       <div class="header-desc">a small portfolio website by Peter</div>
     </div>
 
-    <div class="filter-container"></div>
+    <div class="filter-container">
+      <!-- filters will be dynamically loaded here -->
+    </div>
 
-    <div class="grid-container">
-      <div class="box-container godot-feature-project">
-        <div class="status-container">
-          <div class="status-text">Completed</div>
-          <img src="images/green-dot.png" alt="green dot icon" />
-        </div>
-        <div class="technology-container">Godot, C++, Etc...</div>
-        <div class="more-dropdown">
-          <button class="dropdown-toggle">▼</button>
-          <div class="dropdown-content">I am the additional content</div>
-        </div>
-      </div>
-      <div class="box-container bouncy-ball-project">test</div>
-      <div class="box-container">test</div>
+    <div class="projects-container">
+      <!-- Projects will be dynamically loaded here -->
     </div>
   </body>
 </html>

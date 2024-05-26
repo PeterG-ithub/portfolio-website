@@ -1,0 +1,30 @@
+{
+  "testProject": {
+    "name": "Weather App",
+    "description": "A simple weather forecasting application providing current and weekly weather updates.",
+    "image": "https://example.com/weather-app-image.jpg",
+    "technology": ["JavaScript", "React", "OpenWeather API"],
+    "link": "https://github.com/username/weather-app",
+    "sortBy": "Top",
+    "gameEngine": "Unity",
+    "programmingLanguages": ["C#"],
+    "frameworksAndLibraries": ["SFML"],
+    "platform": "GitHub",
+    "projectType": ["Tool"],
+    "devStage": ["Completed"]
+  },
+  "godotFeatureProject": {
+    "name": "Godot Feature Project",
+    "description": "A project where I put all the features and systems I can add using godot",
+    "image": "images/godot-feature-project.png",
+    "technology": ["Godot", "Github"],
+    "link": "",
+    "sortBy": "Top",
+    "gameEngine": "Godot",
+    "programmingLanguages": [],
+    "frameworksAndLibraries": [],
+    "platform": "",
+    "projectType": ["Game"],
+    "devStage": ["Completed"]
+  }
+}
