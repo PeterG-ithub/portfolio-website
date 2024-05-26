@@ -4,45 +4,16 @@ document.addEventListener('DOMContentLoaded', function () {
     .then((data) => {
       // Create checkbox dropdown for status
       createDropdowns(data);
+
+      // Add event listener to dropdown toggles
+      addDropdownEventListeners();
+
+      // Add event listener to close dropdowns when clicking outside
+      document.addEventListener('click', closeDropdownsOnClickOutside);
     })
     .catch((error) => {
       console.error('Error fetching filter data:', error);
     });
-
-  // Select all dropdown toggles and dropdowns
-  const dropdowns = document.querySelectorAll('.dropdown');
-
-  // Add event listener to each dropdown toggle within its container
-  dropdowns.forEach((dropdown) => {
-    const dropdownToggle = dropdown.querySelector('.dropdown-toggle');
-
-    dropdownToggle.addEventListener('click', function () {
-      dropdown.classList.toggle('show');
-    });
-  });
-
-  document.querySelectorAll('.dropdown-item input[type="checkbox"]').forEach((checkbox) => {
-    checkbox.addEventListener('click', function () {
-      const states = ['include', 'exclude', 'neutral'];
-      let currentState = this.getAttribute('data-state');
-      let currentIndex = states.indexOf(currentState);
-      let nextIndex = (currentIndex + 1) % states.length;
-      this.setAttribute('data-state', states[nextIndex]);
-      this.checked = states[nextIndex] === 'include';
-      this.indeterminate = states[nextIndex] === 'exclude';
-      if (states[nextIndex] === 'neutral') {
-        this.checked = false;
-      }
-    });
-  });
-
-  document.querySelectorAll('.select-dropdown-item').forEach((item) => {
-    item.addEventListener('click', function () {
-      const selectedValue = this.getAttribute('data-value');
-      console.log('Selected Technology:', selectedValue);
-      item.parentNode.parentNode.classList.remove('show');
-    });
-  });
 
   function createDropdowns(data) {
     // Iterate over each category
@@ -124,12 +95,43 @@ document.addEventListener('DOMContentLoaded', function () {
     dropdownContainer.appendChild(button);
     dropdownContainer.appendChild(dropdownMenu);
 
-    // Add event listener to dropdown toggle
-    button.addEventListener('click', function () {
-      dropdownContainer.classList.toggle('show');
-    });
-
     // Append dropdown container to filter container
     parentContainer.appendChild(dropdownContainer);
+  }
+
+  function addDropdownEventListeners() {
+    // Select all dropdown toggles and dropdowns
+    const dropdowns = document.querySelectorAll('.dropdown');
+
+    // Add event listener to each dropdown toggle within its container
+    dropdowns.forEach((dropdown) => {
+      const dropdownToggle = dropdown.querySelector('.dropdown-toggle');
+
+      dropdownToggle.addEventListener('click', function () {
+        // Close all other dropdowns
+        closeAllDropdowns();
+        
+        // Toggle the current dropdown
+        dropdown.classList.toggle('show');
+      });
+    });
+  }
+
+  function closeAllDropdowns() {
+    // Select all dropdowns and remove the 'show' class
+    const dropdowns = document.querySelectorAll('.dropdown');
+    dropdowns.forEach((dropdown) => {
+      dropdown.classList.remove('show');
+    });
+  }
+
+  function closeDropdownsOnClickOutside(event) {
+    // Check if the clicked element is inside any dropdown
+    const isInsideDropdown = event.target.closest('.dropdown');
+
+    // If not, close all dropdowns
+    if (!isInsideDropdown) {
+      closeAllDropdowns();
+    }
   }
 });
