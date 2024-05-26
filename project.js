@@ -60,9 +60,13 @@ function createProject(project) {
         projectTechContainer.appendChild(techElement);
     });
 
-    // See more dropdown
+    projectThumbnail.appendChild(projectTechContainer);
+
+    // See more dropdown (initially hidden)
     const seeMoreDropdown = document.createElement('div');
     seeMoreDropdown.className = 'see-more-dropdown';
+    seeMoreDropdown.style.display = 'none'; // Hide the description initially
+
     const projectDescription = document.createElement('div');
     projectDescription.className = 'project-description';
     projectDescription.innerText = project.description;
@@ -75,11 +79,28 @@ function createProject(project) {
     seeMoreDropdown.appendChild(projectDescription);
     seeMoreDropdown.appendChild(projectLink);
 
+    // Dropdown icon
+    const dropdownIcon = document.createElement('img');
+    dropdownIcon.className = 'dropdown-icon';
+    dropdownIcon.src = 'images/project-dropdown.png';
+    dropdownIcon.alt = 'Dropdown Icon';
+
+    // Add click event listener to toggle project description visibility and rotate dropdown icon
+    projectElement.addEventListener('click', () => {
+        if (seeMoreDropdown.style.display === 'none') {
+            seeMoreDropdown.style.display = 'block';
+            dropdownIcon.style.transform = 'rotate(180deg)';
+        } else {
+            seeMoreDropdown.style.display = 'none';
+            dropdownIcon.style.transform = 'rotate(0deg)';
+        }
+    });
+
     // Append all elements to the project container
     projectElement.appendChild(projectStatusContainer);
     projectElement.appendChild(projectThumbnail);
-    projectElement.appendChild(projectTechContainer);
     projectElement.appendChild(seeMoreDropdown);
+    projectElement.appendChild(dropdownIcon);
 
     return projectElement;
 }

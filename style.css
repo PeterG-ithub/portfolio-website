@@ -23,6 +23,7 @@
   opacity: 0.6;
 }
 
+/*PROJECTS*/
 .projects-container {
   display: grid;
   grid-template-columns: repeat(
@@ -40,10 +41,11 @@
   border: solid black;
   border-radius: 0.7rem;
   min-width: 350px; /* Keep a minimum width */
-  min-height: 400px;
+  min-height: 200px;
   text-align: center;
   box-sizing: border-box; /* Include border in the box's dimensions */
-  transition: all 0.2s ease;
+  transition: all 0.2s ease; /* Set position to relative for absolute positioning of tech-container */
+  overflow: hidden;
 }
 
 .project-container:hover {
@@ -80,6 +82,34 @@
   vertical-align: middle; /* Align image vertically */
 }
 
+.project-thumbnail {
+  position: relative;
+}
+
+.project-tech-container {
+  position: absolute; /* Set position to absolute */
+  bottom: 0; /* Align at the bottom of the container */
+  left: 0; /* Align to the left */
+  width: 100%; /* Occupy full width */
+  background-color: #f9f9f9af;
+  padding: 10px;
+  display: flex;
+  gap: 15px;
+}
+
+.project-tech {
+  width: auto;
+}
+
+.see-more-dropdown {
+  position: relative; /* Set position to relative */
+  z-index: 2; /* Ensure dropdown appears above tech container */
+}
+
+.dropdown-icon {
+  height: 16px;
+  width: auto;
+}
 /*FILTER*/
 
 .filter-container {
@@ -148,52 +178,11 @@
   width: fit-content;
 }
 
-.project-tech-container {
-  position: absolute;
-  bottom: 10%;
-  background-color: #f9f9f9;
-  padding: 10px;
-  display: flex;
-  gap: 15px;
-}
-
-.project-tech {
-  width: auto;
-}
-
-.more-dropdown {
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
 .dropdown-toggle {
   background-color: transparent;
   border: none;
   font-size: 16px;
   cursor: pointer;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: #f9f9f9;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  padding: 10px;
-  border-radius: 5px;
-  width: calc(100% - 40px); /* Adjust to fit inside the box-container */
-  top: 100%; /* Position below the toggle button */
-}
-
-.more-dropdown .show {
-  display: block;
-}
-
-.box-container.expanded {
-  min-height: 500px; /* Adjust based on content */
 }
 
 .inverted {
