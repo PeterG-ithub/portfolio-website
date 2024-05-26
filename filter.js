@@ -1,4 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
+  const filterState = {};
+
   fetch('filter.json')
     .then((response) => response.json())
     .then((data) => {
@@ -33,6 +35,9 @@ document.addEventListener('DOMContentLoaded', function () {
     button.classList.add('dropdown-toggle');
     button.id = `filter-${categoryName}`;
     button.textContent = categoryName.charAt(0).toUpperCase() + categoryName.slice(1); // Capitalize first letter
+
+    // Initialize filter state for this category
+    filterState[categoryName] = {};
 
     // Create dropdown menu
     const dropdownMenu = document.createElement('div');
@@ -70,6 +75,9 @@ document.addEventListener('DOMContentLoaded', function () {
           if (states[nextIndex] === 'neutral') {
             this.checked = false;
           }
+
+          // Update filter state
+          updateFilterState(categoryName, item, states[nextIndex]);
         });
       });
     } else if (categoryData.type.includes('Select')) {
@@ -95,10 +103,15 @@ document.addEventListener('DOMContentLoaded', function () {
           // Close dropdown
           this.parentNode.parentNode.classList.remove('show');
 
+          // Update filter state
+          updateFilterState(categoryName, selectedText, 'selected');
+
           // Add event listener to reset the entire button
           parentButton.addEventListener('click', function () {
             parentButton.textContent = categoryName.charAt(0).toUpperCase() + categoryName.slice(1);
             parentButton.classList.remove('inverted');
+            // Clear filter state for this category
+            filterState[categoryName] = {};
           });
         });
       });
@@ -110,6 +123,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Append dropdown container to filter container
     parentContainer.appendChild(dropdownContainer);
+  }
+
+  function updateFilterState(categoryName, item, state) {
+    if (state === 'neutral') {
+      delete filterState[categoryName][item];
+    } else {
+      filterState[categoryName][item] = state;
+    }
+    console.log('Filter state updated:', filterState);
   }
 
   function addDropdownEventListeners() {
