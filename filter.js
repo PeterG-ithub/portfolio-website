@@ -102,17 +102,22 @@ document.addEventListener('DOMContentLoaded', function () {
   function addDropdownEventListeners() {
     // Select all dropdown toggles and dropdowns
     const dropdowns = document.querySelectorAll('.dropdown');
-
+  
     // Add event listener to each dropdown toggle within its container
     dropdowns.forEach((dropdown) => {
       const dropdownToggle = dropdown.querySelector('.dropdown-toggle');
-
+  
       dropdownToggle.addEventListener('click', function () {
-        // Close all other dropdowns
+        // Check if the dropdown is already open
+        const isOpen = dropdown.classList.contains('show');
+  
+        // Close all dropdowns
         closeAllDropdowns();
-        
-        // Toggle the current dropdown
-        dropdown.classList.toggle('show');
+  
+        // If the clicked dropdown was not already open, open it
+        if (!isOpen) {
+          dropdown.classList.add('show');
+        }
       });
     });
   }
