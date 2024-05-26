@@ -85,8 +85,21 @@ document.addEventListener('DOMContentLoaded', function () {
         // Select dropdown event listener
         dropdownItem.addEventListener('click', function () {
           const selectedValue = this.getAttribute('data-value');
-          console.log(`Selected ${categoryName}:`, selectedValue);
+          const selectedText = this.textContent;
+          const parentButton = this.closest('.dropdown-container').querySelector('.dropdown-toggle');
+
+          // Update button text and invert color scheme
+          parentButton.textContent = `${selectedText} X`;
+          parentButton.classList.add('inverted');
+
+          // Close dropdown
           this.parentNode.parentNode.classList.remove('show');
+
+          // Add event listener to reset the entire button
+          parentButton.addEventListener('click', function () {
+            parentButton.textContent = categoryName.charAt(0).toUpperCase() + categoryName.slice(1);
+            parentButton.classList.remove('inverted');
+          });
         });
       });
     }
@@ -107,16 +120,24 @@ document.addEventListener('DOMContentLoaded', function () {
     dropdowns.forEach((dropdown) => {
       const dropdownToggle = dropdown.querySelector('.dropdown-toggle');
   
-      dropdownToggle.addEventListener('click', function () {
-        // Check if the dropdown is already open
-        const isOpen = dropdown.classList.contains('show');
+      dropdownToggle.addEventListener('click', function (event) {
+        // If the button contains the reset button, reset the dropdown
+        if (dropdownToggle.querySelector('.reset-button')) {
+          event.stopPropagation();
+          dropdownToggle.textContent = dropdownToggle.id.replace('filter-', '').charAt(0).toUpperCase() + dropdownToggle.id.replace('filter-', '').slice(1);
+          dropdownToggle.classList.remove('inverted');
+          dropdownToggle.querySelector('.reset-button').remove();
+        } else {
+          // Check if the dropdown is already open
+          const isOpen = dropdown.classList.contains('show');
   
-        // Close all dropdowns
-        closeAllDropdowns();
+          // Close all dropdowns
+          closeAllDropdowns();
   
-        // If the clicked dropdown was not already open, open it
-        if (!isOpen) {
-          dropdown.classList.add('show');
+          // If the clicked dropdown was not already open, open it
+          if (!isOpen) {
+            dropdown.classList.add('show');
+          }
         }
       });
     });

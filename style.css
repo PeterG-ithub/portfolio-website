@@ -205,3 +205,19 @@
 .box-container.expanded {
   min-height: 500px; /* Adjust based on content */
 }
+
+
+.inverted {
+  background-color: black;
+  color: white;
+}
+
+/* Styles for the reset button */
+.reset-button {
+  background: none;
+  border: none;
+  color: red;
+  cursor: pointer;
+  margin-left: 10px;
+  font-weight: bold;
+}
