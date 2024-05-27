@@ -2,7 +2,7 @@
   "testProject": {
     "name": "Weather App",
     "description": "A simple weather forecasting application providing current and weekly weather updates.",
-    "image": "https://example.com/weather-app-image.jpg",
+    "image": "images/bouncy-ball-project.png",
     "technology": ["JavaScript", "React", "OpenWeather API"],
     "link": "https://github.com/username/weather-app",
     "sortBy": "Top",

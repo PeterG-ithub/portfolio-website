@@ -41,7 +41,7 @@
   border: solid black;
   border-radius: 0.7rem;
   min-width: 350px; /* Keep a minimum width */
-  min-height: 200px;
+  height: fit-content;
   text-align: center;
   box-sizing: border-box; /* Include border in the box's dimensions */
   transition: all 0.2s ease; /* Set position to relative for absolute positioning of tech-container */
@@ -67,6 +67,7 @@
   border-radius: 0.7rem;
   border: solid black 2px;
   opacity: 0.8;
+  z-index: 3;
 }
 
 .project-status {
