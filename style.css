@@ -46,10 +46,11 @@
   box-sizing: border-box; /* Include border in the box's dimensions */
   transition: all 0.2s ease; /* Set position to relative for absolute positioning of tech-container */
   overflow: hidden;
+  cursor: pointer;
 }
 
 .project-container:hover {
-  transform: scale(1.02);
+  transform: scale(1.01);
 }
 
 
@@ -100,6 +101,7 @@
 
 .project-tech {
   width: auto;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .see-more-dropdown {
@@ -110,6 +112,13 @@
 .dropdown-icon {
   height: 16px;
   width: auto;
+  margin: .2rem;
+} 
+
+.project-description {
+  padding: .5rem 1.5rem;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
 }
 /*FILTER*/
 
@@ -147,11 +156,12 @@
 .dropdown-menu {
   display: none;
   position: absolute;
-  top: 40px;
+  top: 45px;
   background-color: #f0f0f0;
   border: solid #757575 1px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  z-index: 1;
+  z-index: 5;
+  cursor: pointer;
 }
 
 .dropdown-menu .dropdown-item {
@@ -165,6 +175,10 @@
 
 .dropdown-item {
   white-space: nowrap;
+}
+
+.dropdown-item:hover {
+  background-color: #c6c6c6;
 }
 
 .dropdown.show .dropdown-menu {
@@ -187,8 +201,9 @@
 }
 
 .inverted {
-  background-color: black;
+  background-color: rgb(138, 138, 138);
   color: white;
+  border-radius: .5rem;
 }
 
 /* Styles for the reset button */

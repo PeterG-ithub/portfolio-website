@@ -74,7 +74,7 @@ function createProject(project) {
     projectLink.className = 'project-link';
     projectLink.href = project.link;
     projectLink.target = '_blank';
-    projectLink.innerText = 'View Project';
+    projectLink.innerText = 'Learn more...';
 
     seeMoreDropdown.appendChild(projectDescription);
     seeMoreDropdown.appendChild(projectLink);
