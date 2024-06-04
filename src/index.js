@@ -1,3 +1,6 @@
+import './css/style.css'
+import './js/filter.js'
+import './js/project.js'
 // Create the header div
 const header = document.createElement('div');
 header.classList.add('header');
@@ -15,7 +18,7 @@ githubLink.appendChild(githubIcon);
 
 // Create the logo image
 const logoImg = document.createElement('img');
-logoImg.src = 'images/portfolio-logo.png';
+logoImg.src = require('./images/portfolio-logo.png');
 logoImg.alt = 'portfolio logo';
 
 // Create the header description

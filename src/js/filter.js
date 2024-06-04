@@ -1,21 +1,17 @@
+import { getFilterData } from '../utils/dataLoader';
 document.addEventListener('DOMContentLoaded', function () {
   const filterState = {};
+  const filterData = getFilterData();
 
-  fetch('filter.json')
-    .then((response) => response.json())
-    .then((data) => {
-      // Create checkbox dropdown for status
-      createDropdowns(data);
+  // Create checkbox dropdown for status
+  createDropdowns(filterData);
 
-      // Add event listener to dropdown toggles
-      addDropdownEventListeners();
+  // Add event listener to dropdown toggles
+  addDropdownEventListeners();
 
-      // Add event listener to close dropdowns when clicking outside
-      document.addEventListener('click', closeDropdownsOnClickOutside);
-    })
-    .catch((error) => {
-      console.error('Error fetching filter data:', error);
-    });
+  // Add event listener to close dropdowns when clicking outside
+  document.addEventListener('click', closeDropdownsOnClickOutside);
+
 
   function createDropdowns(data) {
     // Iterate over each category
