@@ -1,15 +1,12 @@
+import { getProjectsData } from '../utils/dataLoader';
 document.addEventListener('DOMContentLoaded', () => {
     console.log("hi")
-    fetch('projects.json') // Assuming the JSON file is named 'projects.json'
-        .then(response => response.json())
-        .then(data => {
-            const projectContainer = document.querySelector('.projects-container');
-            createProjects(data, projectContainer);
-        })
-        .catch(error => console.error('Error loading the project data:', error));
+    const projectsData = getProjectsData();
+    const projectContainer = document.querySelector('.projects-container');
+    createProjects(projectsData, projectContainer);
 });
 
-function createProjects(data, container) {
+export function createProjects(data, container) {
     for (const key in data) {
         if (data.hasOwnProperty(key)) {
             const project = data[key];
@@ -29,13 +26,13 @@ function createProject(project) {
     projectStatusContainer.className = 'project-status-container';
     const projectStatus = document.createElement('div');
     projectStatus.className = 'project-status';
-    projectStatus.innerText = project.devStage.join(', '); // Join array values for display
+    projectStatus.innerText = project.devStage; // Join array values for display
 
     const statusIcon = document.createElement('img');
     statusIcon.className = 'status-icon';
     // Assuming the first devStage represents the current status
-    const status = project.devStage[0].toLowerCase().replace(/ /g, '-');
-    statusIcon.src = `images/status/${status}-icon.png`; // Construct the image path
+    const status = project.devStage.toLowerCase().replace(/ /g, '-');
+    statusIcon.src = require(`../images/status/${status}-icon.png`); // Construct the image path
     statusIcon.alt = `${project.devStage[0]} Icon`; // Use the devStage as the alt text
 
     projectStatusContainer.appendChild(projectStatus);
@@ -45,7 +42,7 @@ function createProject(project) {
     const projectThumbnail = document.createElement('div');
     projectThumbnail.className = 'project-thumbnail';
     const thumbnailImage = document.createElement('img');
-    thumbnailImage.src = project.image;
+    thumbnailImage.src = require(`../images/thumbnail/${project.image}`);
     thumbnailImage.alt = 'Project Thumbnail';
 
     projectThumbnail.appendChild(thumbnailImage);
@@ -82,7 +79,7 @@ function createProject(project) {
     // Dropdown icon
     const dropdownIcon = document.createElement('img');
     dropdownIcon.className = 'dropdown-icon';
-    dropdownIcon.src = 'images/project-dropdown.png';
+    dropdownIcon.src = require('../images/icons/project-dropdown.png');
     dropdownIcon.alt = 'Dropdown Icon';
 
     // Add click event listener to toggle project description visibility and rotate dropdown icon
