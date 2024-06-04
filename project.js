@@ -29,12 +29,12 @@ function createProject(project) {
     projectStatusContainer.className = 'project-status-container';
     const projectStatus = document.createElement('div');
     projectStatus.className = 'project-status';
-    projectStatus.innerText = project.devStage.join(', '); // Join array values for display
+    projectStatus.innerText = project.devStage; // Join array values for display
 
     const statusIcon = document.createElement('img');
     statusIcon.className = 'status-icon';
     // Assuming the first devStage represents the current status
-    const status = project.devStage[0].toLowerCase().replace(/ /g, '-');
+    const status = project.devStage.toLowerCase().replace(/ /g, '-');
     statusIcon.src = `images/status/${status}-icon.png`; // Construct the image path
     statusIcon.alt = `${project.devStage[0]} Icon`; // Use the devStage as the alt text
 

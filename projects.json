@@ -5,23 +5,35 @@
     "image": "images/bouncy-ball-project.png",
     "technology": ["C++", "SFML"],
     "link": "pages/bouncy-ball.html",
-    "sortBy": "Top",
-    "tags": []
+    "devStage": "Completed",
+    "tags": ["Physics Simulation", "C++", "SFML", "Completed"]
   },
   "godotFeatureProject": {
     "name": "Godot Feature Project",
     "description": "A project where I put all the features and systems I can add using godot",
     "image": "images/godot-feature-project.png",
     "technology": ["Godot"],
-    "link": "pages/bouncy-ball.html",
-    "tags": []
+    "link": "pages/",
+    "devStage": "Prototype",
+    "tags": ["Godot", "Aseprite", "GDScript", "Game Development", "Prototype"]
   },
   "antSimulationProject": {
     "name": "Ant Simulation Project",
     "description": "This Ant Simulation project models the behavior and interactions of an ant colony using C++ and SFML. The simulation includes features like food searching, pheromone trail communication, and pathfinding. It provides a simple yet effective demonstration of ant colony dynamics and behaviors.",
     "image": "images/ant-simulation-thumbnail.png",
     "technology": ["C++", "SFML"],
-    "link": "pages/bouncy-ball.html",
-    "tags": []
+    "link": "pages/",
+    "devStage": "In Progress",
+    "tags": ["C++", "SFML", "Simulation", "In Progress"]
+  },
+  "sociwave": {
+    "name": "Sociwave",
+    "description": "My take on a simple social media application. This application allows users to create accounts, confirm their accounts, comment on posts, like posts, send friend requests, and manage friends.",
+    "image": "images/sociwave-home.png",
+    "technology": ["Ruby on rails", "devise", "omniauth"],
+    "link": "pages/sociwave.html",
+    "devStage": "On Hold",
+    "tags": ["Web Development", "HTML", "CSS", "Javascript", "Ruby", "Ruby on rails", "On Hold"]
   }
+
 }
