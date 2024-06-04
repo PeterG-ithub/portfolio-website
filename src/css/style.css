@@ -96,10 +96,6 @@
   position: relative;
 }
 
-.project-thumbnail > img {
-  min-height: 250px;
-}
-
 .project-tech-container {
   position: absolute; /* Set position to absolute */
   bottom: 0; /* Align at the bottom of the container */
