@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     createProjects(projectsData, projectContainer);
 });
 
-function createProjects(data, container) {
+export function createProjects(data, container) {
     for (const key in data) {
         if (data.hasOwnProperty(key)) {
             const project = data[key];
