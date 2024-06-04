@@ -6,39 +6,22 @@
     "technology": ["C++", "SFML"],
     "link": "pages/bouncy-ball.html",
     "sortBy": "Top",
-    "gameEngine": "",
-    "programmingLanguages": ["C++"],
-    "frameworksAndLibraries": ["SFML"],
-    "platform": "GitHub",
-    "projectType": ["Simulation"],
-    "devStage": ["Completed"]
+    "tags": []
   },
   "godotFeatureProject": {
     "name": "Godot Feature Project",
     "description": "A project where I put all the features and systems I can add using godot",
     "image": "images/godot-feature-project.png",
-    "technology": ["Godot", "Github"],
+    "technology": ["Godot"],
     "link": "pages/bouncy-ball.html",
-    "sortBy": "Top",
-    "gameEngine": "Godot",
-    "programmingLanguages": [],
-    "frameworksAndLibraries": [],
-    "platform": "",
-    "projectType": ["Game"],
-    "devStage": ["Completed"]
+    "tags": []
   },
   "antSimulationProject": {
     "name": "Ant Simulation Project",
     "description": "This Ant Simulation project models the behavior and interactions of an ant colony using C++ and SFML. The simulation includes features like food searching, pheromone trail communication, and pathfinding. It provides a simple yet effective demonstration of ant colony dynamics and behaviors.",
     "image": "images/ant-simulation-thumbnail.png",
-    "technology": ["C++", "SFML", "Github"],
+    "technology": ["C++", "SFML"],
     "link": "pages/bouncy-ball.html",
-    "sortBy": "Top",
-    "gameEngine": "",
-    "programmingLanguages": ["C++"],
-    "frameworksAndLibraries": ["SFML"],
-    "platform": "GitHub, Visual Studio",
-    "projectType": ["Simulation"],
-    "devStage": ["Ongoing"]
+    "tags": []
   }
 }
