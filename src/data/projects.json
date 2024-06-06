@@ -29,7 +29,7 @@
   "sociwave": {
     "name": "Sociwave",
     "description": "My take on a simple social media application. This application allows users to create accounts, confirm their accounts, comment on posts, like posts, send friend requests, and manage friends.",
-    "image": "bouncy-ball-project.png",
+    "image": "sociwave-thumbnail.png",
     "technology": ["Ruby on rails", "devise", "omniauth"],
     "link": "pages/sociwave.html",
     "devStage": "On Hold",

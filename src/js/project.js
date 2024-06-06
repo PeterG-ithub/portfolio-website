@@ -67,14 +67,14 @@ function createProject(project) {
     const projectDescription = document.createElement('div');
     projectDescription.className = 'project-description';
     projectDescription.innerText = project.description;
-    const projectLink = document.createElement('a');
-    projectLink.className = 'project-link';
-    projectLink.href = project.link;
-    projectLink.target = '_blank';
-    projectLink.innerText = 'Learn more...';
+    // const projectLink = document.createElement('a');
+    // projectLink.className = 'project-link';
+    // projectLink.href = project.link;
+    // projectLink.target = '_blank';
+    // projectLink.innerText = 'Learn more...';
 
     seeMoreDropdown.appendChild(projectDescription);
-    seeMoreDropdown.appendChild(projectLink);
+    //seeMoreDropdown.appendChild(projectLink);
 
     // Dropdown icon
     const dropdownIcon = document.createElement('img');
