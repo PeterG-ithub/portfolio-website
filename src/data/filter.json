@@ -1,11 +1,11 @@
 {
   "Programming Languages": {
     "type": ["Checkbox"],
-    "data": ["C++","HTML", "CSS", "JavaScript", "Ruby"]
+    "data": ["C++","HTML", "CSS", "JavaScript", "Ruby", "Python"]
   },
   "Frameworks and Libraries": {
     "type": ["Checkbox"],
-    "data": ["SFML", "Ruby on rails"]
+    "data": ["SFML", "Ruby on rails", "Numpy", "Tkinter"]
   },
   "Tools and Software": {
     "type": ["Checkbox"],

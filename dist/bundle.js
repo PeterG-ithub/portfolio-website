@@ -48,7 +48,7 @@ eval("\n\nmodule.exports = function (i) {\n  return i[1];\n};\n\n//# sourceURL=w
   \******************************/
 /***/ ((module) => {
 
-eval("module.exports = {\"Programming Languages\":{\"type\":[\"Checkbox\"],\"data\":[\"C++\",\"HTML\",\"CSS\",\"JavaScript\",\"Ruby\"]},\"Frameworks and Libraries\":{\"type\":[\"Checkbox\"],\"data\":[\"SFML\",\"Ruby on rails\"]},\"Tools and Software\":{\"type\":[\"Checkbox\"],\"data\":[\"Godot\",\"Aseprite\"]},\"Project Type\":{\"type\":[\"Checkbox\"],\"data\":[\"Web Development\",\"Game Development\",\"Simulation\",\"Physics Simulation\"]},\"Dev Stage\":{\"type\":[\"Checkbox\"],\"data\":[\"Completed\",\"In Progress\",\"Concept\",\"Protoype\",\"On Hold\"]}}\n\n//# sourceURL=webpack://portfolio-website/./src/data/filter.json?");
+eval("module.exports = {\"Programming Languages\":{\"type\":[\"Checkbox\"],\"data\":[\"C++\",\"HTML\",\"CSS\",\"JavaScript\",\"Ruby\",\"Python\"]},\"Frameworks and Libraries\":{\"type\":[\"Checkbox\"],\"data\":[\"SFML\",\"Ruby on rails\",\"Numpy\",\"Tkinter\"]},\"Tools and Software\":{\"type\":[\"Checkbox\"],\"data\":[\"Godot\",\"Aseprite\"]},\"Project Type\":{\"type\":[\"Checkbox\"],\"data\":[\"Web Development\",\"Game Development\",\"Simulation\",\"Physics Simulation\"]},\"Dev Stage\":{\"type\":[\"Checkbox\"],\"data\":[\"Completed\",\"In Progress\",\"Concept\",\"Protoype\",\"On Hold\"]}}\n\n//# sourceURL=webpack://portfolio-website/./src/data/filter.json?");
 
 /***/ }),
 
