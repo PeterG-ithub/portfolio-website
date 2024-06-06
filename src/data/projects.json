@@ -34,6 +34,23 @@
     "link": "pages/sociwave.html",
     "devStage": "On Hold",
     "tags": ["Web Development", "HTML", "CSS", "Javascript", "Ruby", "Ruby on rails", "On Hold"]
+  },
+  "inverseKinematics": {
+    "name": "Inverse Kinematics Project",
+    "description": "This project demonstrates a simple implementation of inverse kinematics using SFML (Simple and Fast Multimedia Library) in C++. Inverse kinematics is a method used to calculate the joint angles of a robotic arm or leg in order to achieve a desired end effector position.",
+    "image": "inverse-kinematics-project.png",
+    "technology": ["C++", "SFML"],
+    "link": "",
+    "devStage": "Completed",
+    "tags": ["Physics Simulation", "C++", "SFML", "Completed"]
+  },
+  "statsAndSystems": {
+    "name": "Stats and System: Village Edition",
+    "description": "Stats and System: Village Edition is a Python-based simulation project that aims to create a virtual village where all actions and events are governed by statistical probabilities. In this simulated world, players observe and interact with a community of villagers as they go about their daily lives, facing challenges and opportunities based on their individual and collective statistics.",
+    "image": "stats-and-systems.png",
+    "technology": ["Python", "Numpy", "Tkinter"],
+    "link": "",
+    "devStage": "Concept",
+    "tags": ["Simulation", "Python", "Numpy", "Tkinter", "Concept"]
   }
-
 }
