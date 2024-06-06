@@ -48,7 +48,7 @@ eval("\n\nmodule.exports = function (i) {\n  return i[1];\n};\n\n//# sourceURL=w
   \******************************/
 /***/ ((module) => {
 
-eval("module.exports = {\"Programming Languages\":{\"type\":[\"Checkbox\"],\"data\":[\"C++\",\"HTML\",\"CSS\",\"JavaScript\",\"Ruby\"]},\"Frameworks and Libraries\":{\"type\":[\"Checkbox\"],\"data\":[\"SFML\",\"Ruby on rails\"]},\"Tools and Software\":{\"type\":[\"Checkbox\"],\"data\":[\"Godot\",\"Aseprite\"]},\"Project Type\":{\"type\":[\"Checkbox\"],\"data\":[\"Web Development\",\"Game Development\",\"Simulation\",\"Physics Simulation\"]},\"Dev Stage\":{\"type\":[\"Checkbox\"],\"data\":[\"Completed\",\"In Progress\",\"Concept\",\"Protoype\",\"On Hold\"]}}\n\n//# sourceURL=webpack://portfolio-website/./src/data/filter.json?");
+eval("module.exports = {\"Programming Languages\":{\"type\":[\"Checkbox\"],\"data\":[\"C++\",\"HTML\",\"CSS\",\"JavaScript\",\"Ruby\",\"Python\"]},\"Frameworks and Libraries\":{\"type\":[\"Checkbox\"],\"data\":[\"SFML\",\"Ruby on rails\",\"Numpy\",\"Tkinter\"]},\"Tools and Software\":{\"type\":[\"Checkbox\"],\"data\":[\"Godot\",\"Aseprite\"]},\"Project Type\":{\"type\":[\"Checkbox\"],\"data\":[\"Web Development\",\"Game Development\",\"Simulation\",\"Physics Simulation\"]},\"Dev Stage\":{\"type\":[\"Checkbox\"],\"data\":[\"Completed\",\"In Progress\",\"Concept\",\"Protoype\",\"On Hold\"]}}\n\n//# sourceURL=webpack://portfolio-website/./src/data/filter.json?");
 
 /***/ }),
 
@@ -58,7 +58,7 @@ eval("module.exports = {\"Programming Languages\":{\"type\":[\"Checkbox\"],\"dat
   \********************************/
 /***/ ((module) => {
 
-eval("module.exports = {\"bouncyBallProject\":{\"name\":\"Bouncy Ball\",\"description\":\"A simple bouncy ball simulation using C++ and SFML\",\"image\":\"bouncy-ball-project.png\",\"technology\":[\"C++\",\"SFML\"],\"link\":\"pages/bouncy-ball.html\",\"devStage\":\"Completed\",\"tags\":[\"Physics Simulation\",\"C++\",\"SFML\",\"Completed\"]},\"godotFeatureProject\":{\"name\":\"Godot Feature Project\",\"description\":\"A project where I put all the features and systems I can add using godot\",\"image\":\"godot-feature-project.png\",\"technology\":[\"Godot\"],\"link\":\"pages/\",\"devStage\":\"Prototype\",\"tags\":[\"Godot\",\"Aseprite\",\"GDScript\",\"Game Development\",\"Prototype\"]},\"antSimulationProject\":{\"name\":\"Ant Simulation Project\",\"description\":\"This Ant Simulation project models the behavior and interactions of an ant colony using C++ and SFML. The simulation includes features like food searching, pheromone trail communication, and pathfinding. It provides a simple yet effective demonstration of ant colony dynamics and behaviors.\",\"image\":\"ant-simulation-thumbnail.png\",\"technology\":[\"C++\",\"SFML\"],\"link\":\"pages/\",\"devStage\":\"In Progress\",\"tags\":[\"C++\",\"SFML\",\"Simulation\",\"In Progress\"]},\"sociwave\":{\"name\":\"Sociwave\",\"description\":\"My take on a simple social media application. This application allows users to create accounts, confirm their accounts, comment on posts, like posts, send friend requests, and manage friends.\",\"image\":\"sociwave-thumbnail.png\",\"technology\":[\"Ruby on rails\",\"devise\",\"omniauth\"],\"link\":\"pages/sociwave.html\",\"devStage\":\"On Hold\",\"tags\":[\"Web Development\",\"HTML\",\"CSS\",\"Javascript\",\"Ruby\",\"Ruby on rails\",\"On Hold\"]}}\n\n//# sourceURL=webpack://portfolio-website/./src/data/projects.json?");
+eval("module.exports = {\"bouncyBallProject\":{\"name\":\"Bouncy Ball\",\"description\":\"A simple bouncy ball simulation using C++ and SFML\",\"image\":\"bouncy-ball-project.png\",\"technology\":[\"C++\",\"SFML\"],\"link\":\"pages/bouncy-ball.html\",\"devStage\":\"Completed\",\"tags\":[\"Physics Simulation\",\"C++\",\"SFML\",\"Completed\"]},\"godotFeatureProject\":{\"name\":\"Godot Feature Project\",\"description\":\"A project where I put all the features and systems I can add using godot\",\"image\":\"godot-feature-project.png\",\"technology\":[\"Godot\"],\"link\":\"pages/\",\"devStage\":\"Prototype\",\"tags\":[\"Godot\",\"Aseprite\",\"GDScript\",\"Game Development\",\"Prototype\"]},\"antSimulationProject\":{\"name\":\"Ant Simulation Project\",\"description\":\"This Ant Simulation project models the behavior and interactions of an ant colony using C++ and SFML. The simulation includes features like food searching, pheromone trail communication, and pathfinding. It provides a simple yet effective demonstration of ant colony dynamics and behaviors.\",\"image\":\"ant-simulation-thumbnail.png\",\"technology\":[\"C++\",\"SFML\"],\"link\":\"pages/\",\"devStage\":\"In Progress\",\"tags\":[\"C++\",\"SFML\",\"Simulation\",\"In Progress\"]},\"sociwave\":{\"name\":\"Sociwave\",\"description\":\"My take on a simple social media application. This application allows users to create accounts, confirm their accounts, comment on posts, like posts, send friend requests, and manage friends.\",\"image\":\"sociwave-thumbnail.png\",\"technology\":[\"Ruby on rails\",\"devise\",\"omniauth\"],\"link\":\"pages/sociwave.html\",\"devStage\":\"On Hold\",\"tags\":[\"Web Development\",\"HTML\",\"CSS\",\"Javascript\",\"Ruby\",\"Ruby on rails\",\"On Hold\"]},\"inverseKinematics\":{\"name\":\"Inverse Kinematics Project\",\"description\":\"This project demonstrates a simple implementation of inverse kinematics using SFML (Simple and Fast Multimedia Library) in C++. Inverse kinematics is a method used to calculate the joint angles of a robotic arm or leg in order to achieve a desired end effector position.\",\"image\":\"inverse-kinematics-project.png\",\"technology\":[\"C++\",\"SFML\"],\"link\":\"\",\"devStage\":\"Completed\",\"tags\":[\"Physics Simulation\",\"C++\",\"SFML\",\"Completed\"]},\"statsAndSystems\":{\"name\":\"Stats and System: Village Edition\",\"description\":\"Stats and System: Village Edition is a Python-based simulation project that aims to create a virtual village where all actions and events are governed by statistical probabilities. In this simulated world, players observe and interact with a community of villagers as they go about their daily lives, facing challenges and opportunities based on their individual and collective statistics.\",\"image\":\"stats-and-systems.png\",\"technology\":[\"Python\",\"Numpy\",\"Tkinter\"],\"link\":\"\",\"devStage\":\"Concept\",\"tags\":[\"Simulation\",\"Python\",\"Numpy\",\"Tkinter\",\"Concept\"]}}\n\n//# sourceURL=webpack://portfolio-website/./src/data/projects.json?");
 
 /***/ }),
 
@@ -145,7 +145,7 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
   \*****************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("var map = {\n\t\"./completed-icon.png\": \"./src/images/status/completed-icon.png\",\n\t\"./in-progress-icon.png\": \"./src/images/status/in-progress-icon.png\",\n\t\"./on-hold-icon.png\": \"./src/images/status/on-hold-icon.png\",\n\t\"./prototype-icon.png\": \"./src/images/status/prototype-icon.png\",\n\t\"./template-icon.png\": \"./src/images/status/template-icon.png\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./src/images/status sync recursive ^\\\\.\\\\/.*\\\\-icon\\\\.png$\";\n\n//# sourceURL=webpack://portfolio-website/./src/images/status/_sync_^\\.\\/.*\\-icon\\.png$?");
+eval("var map = {\n\t\"./completed-icon.png\": \"./src/images/status/completed-icon.png\",\n\t\"./concept-icon.png\": \"./src/images/status/concept-icon.png\",\n\t\"./in-progress-icon.png\": \"./src/images/status/in-progress-icon.png\",\n\t\"./on-hold-icon.png\": \"./src/images/status/on-hold-icon.png\",\n\t\"./prototype-icon.png\": \"./src/images/status/prototype-icon.png\",\n\t\"./template-icon.png\": \"./src/images/status/template-icon.png\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./src/images/status sync recursive ^\\\\.\\\\/.*\\\\-icon\\\\.png$\";\n\n//# sourceURL=webpack://portfolio-website/./src/images/status/_sync_^\\.\\/.*\\-icon\\.png$?");
 
 /***/ }),
 
@@ -155,7 +155,7 @@ eval("var map = {\n\t\"./completed-icon.png\": \"./src/images/status/completed-i
   \*********************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("var map = {\n\t\"./ant-simulation-thumbnail.png\": \"./src/images/thumbnail/ant-simulation-thumbnail.png\",\n\t\"./bouncy-ball-project.png\": \"./src/images/thumbnail/bouncy-ball-project.png\",\n\t\"./godot-feature-project.png\": \"./src/images/thumbnail/godot-feature-project.png\",\n\t\"./sociwave-thumbnail.png\": \"./src/images/thumbnail/sociwave-thumbnail.png\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./src/images/thumbnail sync recursive ^\\\\.\\\\/.*$\";\n\n//# sourceURL=webpack://portfolio-website/./src/images/thumbnail/_sync_^\\.\\/.*$?");
+eval("var map = {\n\t\"./ant-simulation-thumbnail.png\": \"./src/images/thumbnail/ant-simulation-thumbnail.png\",\n\t\"./bouncy-ball-project.png\": \"./src/images/thumbnail/bouncy-ball-project.png\",\n\t\"./godot-feature-project.png\": \"./src/images/thumbnail/godot-feature-project.png\",\n\t\"./inverse-kinematics-project.png\": \"./src/images/thumbnail/inverse-kinematics-project.png\",\n\t\"./sociwave-thumbnail.png\": \"./src/images/thumbnail/sociwave-thumbnail.png\",\n\t\"./stats-and-systems.png\": \"./src/images/thumbnail/stats-and-systems.png\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./src/images/thumbnail sync recursive ^\\\\.\\\\/.*$\";\n\n//# sourceURL=webpack://portfolio-website/./src/images/thumbnail/_sync_^\\.\\/.*$?");
 
 /***/ }),
 
@@ -236,6 +236,17 @@ eval("module.exports = __webpack_require__.p + \"images/completed-icon.png\";\n\
 
 /***/ }),
 
+/***/ "./src/images/status/concept-icon.png":
+/*!********************************************!*\
+  !*** ./src/images/status/concept-icon.png ***!
+  \********************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"images/concept-icon.png\";\n\n//# sourceURL=webpack://portfolio-website/./src/images/status/concept-icon.png?");
+
+/***/ }),
+
 /***/ "./src/images/status/in-progress-icon.png":
 /*!************************************************!*\
   !*** ./src/images/status/in-progress-icon.png ***!
@@ -313,6 +324,17 @@ eval("module.exports = __webpack_require__.p + \"images/godot-feature-project.pn
 
 /***/ }),
 
+/***/ "./src/images/thumbnail/inverse-kinematics-project.png":
+/*!*************************************************************!*\
+  !*** ./src/images/thumbnail/inverse-kinematics-project.png ***!
+  \*************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"images/inverse-kinematics-project.png\";\n\n//# sourceURL=webpack://portfolio-website/./src/images/thumbnail/inverse-kinematics-project.png?");
+
+/***/ }),
+
 /***/ "./src/images/thumbnail/sociwave-thumbnail.png":
 /*!*****************************************************!*\
   !*** ./src/images/thumbnail/sociwave-thumbnail.png ***!
@@ -321,6 +343,17 @@ eval("module.exports = __webpack_require__.p + \"images/godot-feature-project.pn
 
 "use strict";
 eval("module.exports = __webpack_require__.p + \"images/sociwave-thumbnail.png\";\n\n//# sourceURL=webpack://portfolio-website/./src/images/thumbnail/sociwave-thumbnail.png?");
+
+/***/ }),
+
+/***/ "./src/images/thumbnail/stats-and-systems.png":
+/*!****************************************************!*\
+  !*** ./src/images/thumbnail/stats-and-systems.png ***!
+  \****************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"images/stats-and-systems.png\";\n\n//# sourceURL=webpack://portfolio-website/./src/images/thumbnail/stats-and-systems.png?");
 
 /***/ })
 
